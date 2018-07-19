@@ -42,4 +42,12 @@ public class TraineeService {
 		LOGGER.info("trainee service update trainee");
 		return repo.updateTrainee(trainee, id);
 	}
+
+	public TraineeDBRepository getRepo() {
+		return repo;
+	}
+
+	public void setRepo(TraineeDBRepository repo) {
+		this.repo = repo;
+	}
 }
