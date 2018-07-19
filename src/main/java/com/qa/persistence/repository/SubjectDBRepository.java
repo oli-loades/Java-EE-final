@@ -58,7 +58,7 @@ public class SubjectDBRepository {
 	}
 
 	@Transactional(REQUIRED)
-	public String deleteTrainee(long id) {
+	public String deleteSubject(long id) {
 		LOGGER.info("subject DB repository delete subject");
 		Subject subject = findSubject(id);
 		if (subject != null) {
