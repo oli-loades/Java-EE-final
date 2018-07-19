@@ -43,4 +43,12 @@ public class SubjectService {
 		LOGGER.info("subject service update subject");
 		return repo.updateSubject(subject, id);
 	}
+
+	public SubjectDBRepository getRepo() {
+		return repo;
+	}
+
+	public void setRepo(SubjectDBRepository repo) {
+		this.repo = repo;
+	}
 }

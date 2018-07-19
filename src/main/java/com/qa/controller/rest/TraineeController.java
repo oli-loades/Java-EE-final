@@ -67,4 +67,12 @@ public class TraineeController {
 		return traineeServ.createTrainee(trainee);
 	}
 
+	public TraineeService getTraineeServ() {
+		return traineeServ;
+	}
+
+	public void setTraineeServ(TraineeService traineeServ) {
+		this.traineeServ = traineeServ;
+	}
+
 }

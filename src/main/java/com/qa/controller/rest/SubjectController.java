@@ -28,7 +28,7 @@ public class SubjectController {
 	@Path("/json")
 	@GET
 	@Produces({ "application/json" })
-	public String getAllTrainees() {
+	public String getAllSubjects() {
 		LOGGER.info("subject controller get all subjects");
 		return subjectServ.getAllSubjects();
 	}
@@ -36,7 +36,7 @@ public class SubjectController {
 	@Path("/json/{id}")
 	@GET
 	@Produces({ "application/json" })
-	public Subject findTrainee(@PathParam("id") Long id) {
+	public Subject findSubject(@PathParam("id") Long id) {
 		LOGGER.info("subject controller find subject");
 		return subjectServ.getSubject(id);
 	}
@@ -63,5 +63,13 @@ public class SubjectController {
 	public String createSubject(String subject) {
 		LOGGER.info("subject controller create new subject");
 		return subjectServ.createSubject(subject);
+	}
+
+	public SubjectService getSubjectServ() {
+		return subjectServ;
+	}
+
+	public void setSubjectServ(SubjectService subjectServ) {
+		this.subjectServ = subjectServ;
 	}
 }

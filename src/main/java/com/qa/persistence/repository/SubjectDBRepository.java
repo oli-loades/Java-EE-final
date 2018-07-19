@@ -66,5 +66,21 @@ public class SubjectDBRepository {
 		}
 		return "{\"message\": \"subject sucessfully deleted\"}";
 	}
+
+	public EntityManager getEm() {
+		return em;
+	}
+
+	public void setEm(EntityManager em) {
+		this.em = em;
+	}
+
+	public JSONUtility getUtil() {
+		return util;
+	}
+
+	public void setUtil(JSONUtility util) {
+		this.util = util;
+	}
 	
 }
