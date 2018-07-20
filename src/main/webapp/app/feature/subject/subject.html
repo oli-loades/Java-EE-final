@@ -1,0 +1,14 @@
+<div ng-controller="subjectController as subjectCtrl">
+    <h1>{{subjectCtrl.trainee.firstName}} {{subjectCtrl.trainee.surname}} </h1>
+    <table class = "table">
+        <tr>
+            <th>{{'title' | uppercase}}</th>
+            <th>{{'score' | uppercase}}</th>
+        </tr>
+        <tr ng-repeat="subject in subjectCtrl.trainee.subjects">
+            <td>{{subject.title}}</td>
+            <td>{{subject.score}}</td>
+        </tr>
+    </table>
+    <button ng-click = "subjectCtrl.back()" > back </button>
+</div>

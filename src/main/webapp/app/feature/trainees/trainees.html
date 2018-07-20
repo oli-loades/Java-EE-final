@@ -1,0 +1,10 @@
+
+<div ng-controller = "traineesController as traineesCtrl">
+<h1> Trainees </h1>
+    <div style = "height:200px; overflow:hidden; overflow-y:scroll;">
+        <ul ng-repeat="t in traineesCtrl.trainees">
+            <li ng-click = "traineesCtrl.go(t)"> {{t.surname | uppercase}}, {{t.firstName | uppercase}} </li>
+        </ul>
+    </div>
+
+</div>

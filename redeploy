@@ -1,0 +1,6 @@
+#!/bin/bash
+deploy_folder="/c/Users/Admin/Applications/wildfly-10.1.0.Final/standalone/deployments"
+mvn clean install
+rm -rf $deploy_folder/traineeapp1*
+cp target/traineeapp1.war $deploy_folder
+
