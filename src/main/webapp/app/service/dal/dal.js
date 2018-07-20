@@ -71,5 +71,5 @@
 
         $log.debug("DAL Instantiated");
     }
-    angular.module("accountApp").service("dal", ["$http", "$q", "$log", Dal]);
+    angular.module("traineeApp").service("dal", ["$http", "$q", "$log", Dal]);
 }());
